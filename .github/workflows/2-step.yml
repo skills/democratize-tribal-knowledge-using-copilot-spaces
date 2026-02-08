@@ -21,7 +21,7 @@ env:
 jobs:
   find_exercise:
     name: Find Exercise Issue
-    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.1
+    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.8.0
 
   # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
   check_step_work:
@@ -41,7 +41,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.1
+          ref: v0.8.0
 
       - name: Find last comment
         id: find-last-comment
@@ -121,7 +121,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.1
+          ref: v0.8.0
 
       - name: Create comment - step finished
         uses: GrantBirki/comment@v2.1.1

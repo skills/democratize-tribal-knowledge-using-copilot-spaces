@@ -40,7 +40,7 @@ jobs:
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.7.1
+          ref: v0.8.0
 
       - name: Create comment - add step content
         uses: GrantBirki/comment@v2.1.1
