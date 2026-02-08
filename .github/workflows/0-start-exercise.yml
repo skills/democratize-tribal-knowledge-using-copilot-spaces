@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.7.1
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.0
     with:
       exercise-title: "Scale institutional knowledge using Copilot Spaces"
       intro-message: "Use Copilot Spaces to share, update, and add content for a central knowledge base"

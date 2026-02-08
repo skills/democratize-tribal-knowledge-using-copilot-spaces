@@ -34,10 +34,10 @@ _Use the following prompt in a new Copilot Space conversation:_
 - Select the issue template to this new Copilot Space conversation. </br>
   `.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`
 
-     <img width="30%" height="30%" alt="Attach" src="https://github.com/user-attachments/assets/2a447ff9-76d7-462f-9292-4663c8dc0fc9" />
-     <img width="30%" height="30%" alt="Attach files" src="https://github.com/user-attachments/assets/6ac6e33d-b333-424f-b431-e3feb7022b84" />
+     <img width="30%" height="30%" alt="Attach" src="../images/attach.png" />
+     <img width="30%" height="30%" alt="Attach files" src="../images/attach-files.png" />
 
-     <img width="30%" height="30%" alt="Attach issue template conversation" src="https://github.com/user-attachments/assets/5fc71905-ede6-45cb-bcfa-93d2797160b2" />
+     <img width="30%" height="30%" alt="Attach issue template conversation" src="../images/attach-issue-template-conversation.png" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -52,10 +52,9 @@ _Use the following prompt in a new Copilot Space conversation:_
   > - add to the process document `docs/octoacme-roles-and-personas.md`
   > ```
 
-    <img width="50%" height="50%" alt="personas/roles issue draft" src="https://github.com/user-attachments/assets/cd02e396-2505-450a-aca3-8e1642d6306a" />
+    <img width="50%" height="50%" alt="personas/roles issue draft" src="../images/personas-roles-issue-draft.png" />
 
-  <img width="50%" height="50%" alt="personas/roles issue created" src="https://github.com/user-attachments/assets/7f30e13b-7efd-45a0-939a-e7095ff0637c" />
-
+  <img width="50%" height="50%" alt="personas/roles issue created" src="../images/personas-roles-issue-created.png" />
 
 ### ⌨️ Activity: Attach an issue and create a Pull Request
 
@@ -78,7 +77,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 > @{{full_repo_name}}/issues/4
 > ```
 
-   <img width="40%" height="40%" alt="repository issue and pull request creation" src="https://github.com/user-attachments/assets/cf4f0c32-76cb-429d-b607-f65f444b07d5" />
+   <img width="40%" height="40%" alt="repository issue and pull request creation" src="../images/repository-issue-pr-creation-step3.png" />
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 >
@@ -94,19 +93,18 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
 1. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
-   <img width="50%" height="50%" alt="Copilot coding agent allow" src="https://github.com/user-attachments/assets/b0c92c04-d12b-4c5e-b682-33643b90ee11" />
+   <img width="50%" height="50%" alt="Copilot coding agent allow" src="../images/copilot-coding-agent-allow.png" />
 
-1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request. 
+1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
 
-    There are two ways you can check the status of the coding agent working on your pull request
-    
-    1. Go to your repository and click **Pull requests** to see the progress:
-       
-       <img width="70%" height="70%" alt="pull requests" src="https://github.com/user-attachments/assets/88e9876e-2dae-43a4-86ff-29c4cdc6077c" />
-  
-    1. You can track progress and view details in **Mission Control** for **agent tasks** by following the task link
-  
-       <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/a64c1826-720e-4b5f-8d0f-8aebc9aca501" />
+   There are two ways you can check the status of the coding agent working on your pull request
+   1. Go to your repository and click **Pull requests** to see the progress:
+
+      <img width="70%" height="70%" alt="pull requests" src="../images/pull-requests.png" />
+
+   1. You can track progress and view details in **Mission Control** for **agent tasks** by following the task link
+
+      <img width="40%" height="40%" alt="mission control" src="../images/mission-control.png" />
 
 1. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
@@ -116,23 +114,23 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
    > check open pull requests
    > ```
 
-   <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/66693282-e5f6-45d6-8ca8-968e73826738" />
+   <img width="40%" height="40%" alt="mission control" src="../images/mission-control-check-prs-step3.png" />
 
- > [!NOTE]  
- > The coding agent typically takes 5-15 minutes to complete the work. You can click **View session** to watch the progress if desired.
+> [!NOTE]  
+> The coding agent typically takes 5-15 minutes to complete the work. You can click **View session** to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 
-      <img width="70%" height="70%" alt="Add review" src="https://github.com/user-attachments/assets/ea460dc3-a86d-467b-8469-bd9244b915ea" />
+      <img width="70%" height="70%" alt="Add review" src="../images/add-review.png" />
 
-      <img width="50%" height="50%" alt="Submit review" src="https://github.com/user-attachments/assets/15042891-c8fa-4acc-a25d-c588cf6a3ffe" />
+      <img width="50%" height="50%" alt="Submit review" src="../images/submit-review.png" />
 
    b. **Merge**: Select **Ready for review**, then **Merge pull request** and **Confirm merge**
 
-      <img width="50%" height="50%" alt="Ready for review" src="https://github.com/user-attachments/assets/2348378d-a597-404f-827d-4003d79055c0" />
-      <img width="50%" height="50%" alt="Merge pull request" src="https://github.com/user-attachments/assets/fda15799-a123-4e6a-b32a-c7ec44db3418" />
+      <img width="50%" height="50%" alt="Ready for review" src="../images/ready-for-review.png" />
+      <img width="50%" height="50%" alt="Merge pull request" src="../images/merge-pull-request.png" />
 
 <details>
 <summary>Having trouble? 🤷</summary>

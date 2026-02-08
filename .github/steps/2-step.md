@@ -28,9 +28,9 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 
 - Generate a summary. Should be 3-4 paragraphs covering the main processes OctoAcme uses for project management.
-- Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces or by clicking the name <img width="50%" height="50%" alt="link to Copilot Space" src="https://github.com/user-attachments/assets/13534299-c764-4d20-9760-88bd7dac7cff" />
+- Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces or by clicking the name <img width="50%" height="50%" alt="link to Copilot Space" src="../images/link-to-copilot-space.png" />
 - Start a new conversation in the Copilot Space and prompt the following:
-  <img width="70%" height="70%" alt="Copilot Space conversation OctoAcme project management process docs summary" src="https://github.com/user-attachments/assets/342605be-4b36-48b2-b54f-18ae85f16bb8" />
+  <img width="70%" height="70%" alt="Copilot Space conversation OctoAcme project management process docs summary" src="../images/copilot-space-conversation-summary.png" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -43,7 +43,7 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
 <details>
 <summary> 📷 Show screenshot of the conversation output</summary>
 
-<img width="50%" height="50%" alt="Copilot response with the summary" src="https://github.com/user-attachments/assets/26a54642-a14b-498d-a195-d1ffd45e5679" />
+<img width="50%" height="50%" alt="Copilot response with the summary" src="../images/copilot-response-summary.png" />
 
 </details>
 
@@ -55,21 +55,21 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 1. **Attach the issue to your conversation**: In your Copilot Space, type the following (replace `#` with your actual issue number):
 
- > [!IMPORTANT]
- > After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
+> [!IMPORTANT]
+> After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
 
-   ```text
-   @{{full_repo_name}}/issues/#
-   ```
+```text
+@{{full_repo_name}}/issues/#
+```
 
-   (Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
+(Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
 
 1. **Verify the issue is attached**: You should see the issue title and details appear in your conversation
 
 1. **Create the pull request**: Now send this prompt to create the pull request:
 
-   <img width="80%" height="80%" alt="repository issue and pull request creation" src="https://github.com/user-attachments/assets/af469c6a-fc87-454b-9a65-23ffe0d7cd50" />
-   
+   <img width="80%" height="80%" alt="repository issue and pull request creation" src="../images/repository-issue-pr-creation-step2.png" />
+
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
@@ -83,19 +83,18 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 1. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
-   <img width="50%" height="50%" alt="Copilot coding agent allow" src="https://github.com/user-attachments/assets/b0c92c04-d12b-4c5e-b682-33643b90ee11" />
+   <img width="50%" height="50%" alt="Copilot coding agent allow" src="../images/copilot-coding-agent-allow.png" />
 
-1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request. 
+1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
 
-    There are two ways you can check the status of the coding agent working on your pull request
-    
-    1. Go to your repository and click **Pull requests** to see the progress:
-       
-       <img width="70%" height="70%" alt="pull requests" src="https://github.com/user-attachments/assets/88e9876e-2dae-43a4-86ff-29c4cdc6077c" />
-  
-    1. You can track progress and view details in **Mission Control** for **agent tasks** by following the task link
-  
-       <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/a64c1826-720e-4b5f-8d0f-8aebc9aca501" />
+   There are two ways you can check the status of the coding agent working on your pull request
+   1. Go to your repository and click **Pull requests** to see the progress:
+
+      <img width="70%" height="70%" alt="pull requests" src="../images/pull-requests.png" />
+
+   1. You can track progress and view details in **Mission Control** for **agent tasks** by following the task link
+
+      <img width="40%" height="40%" alt="mission control" src="../images/mission-control.png" />
 
 1. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
@@ -105,23 +104,23 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > check open pull requests
    > ```
 
-   <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/ef0ffd8a-ba8f-4618-a2cc-8e1e0d1bb309" />
+   <img width="40%" height="40%" alt="mission control" src="../images/mission-control-check-prs.png" />
 
- > [!NOTE]  
- > The coding agent typically takes 5-15 minutes to complete the work. You can click **View session** to watch the progress if desired.
+> [!NOTE]  
+> The coding agent typically takes 5-15 minutes to complete the work. You can click **View session** to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 
-      <img width="70%" height="70%" alt="Add review" src="https://github.com/user-attachments/assets/ea460dc3-a86d-467b-8469-bd9244b915ea" />
+      <img width="70%" height="70%" alt="Add review" src="../images/add-review.png" />
 
-      <img width="50%" height="50%" alt="Submit review" src="https://github.com/user-attachments/assets/15042891-c8fa-4acc-a25d-c588cf6a3ffe" />
+      <img width="50%" height="50%" alt="Submit review" src="../images/submit-review.png" />
 
    b. **Merge**: Select **Ready for review**, then **Merge pull request** and **Confirm merge**
 
-      <img width="50%" height="50%" alt="Ready for review" src="https://github.com/user-attachments/assets/2348378d-a597-404f-827d-4003d79055c0" />
-      <img width="50%" height="50%" alt="Merge pull request" src="https://github.com/user-attachments/assets/fda15799-a123-4e6a-b32a-c7ec44db3418" />
+      <img width="50%" height="50%" alt="Ready for review" src="../images/ready-for-review.png" />
+      <img width="50%" height="50%" alt="Merge pull request" src="../images/merge-pull-request.png" />
 
 <details>
 <summary>Having trouble? 🤷</summary>
