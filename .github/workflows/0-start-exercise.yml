@@ -18,7 +18,7 @@ jobs:
     if: |
       !github.event.repository.is_template
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.0
+    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.8.1
     with:
       exercise-title: "Scale institutional knowledge using Copilot Spaces"
       intro-message: "Use Copilot Spaces to share, update, and add content for a central knowledge base"
@@ -34,13 +34,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Get response templates
         uses: actions/checkout@v5
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
-          ref: v0.8.0
+          ref: v0.8.1
 
       - name: Create comment - add step content
         uses: GrantBirki/comment@v2.1.1
