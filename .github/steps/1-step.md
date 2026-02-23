@@ -94,7 +94,7 @@ Add a description:
 1. Select the `docs` and the `.github/ISSUE_TEMPLATE` folders and click **Add**
 1. Verify the repository appears in your sources list
 
-  <img width="30%" height="30%" alt="Add sources" src="https://github.com/user-attachments/assets/05268c3f-5270-4e60-bc87-69fc27b1df72" />
+  <img width="30%" height="30%" alt="Add sources" src="https://github.com/user-attachments/assets/1ed4d452-dc85-4fc2-806c-26a385eb458b" />
   <img width="30%" height="30%" alt="Add sources repository" src="https://github.com/user-attachments/assets/83725fcc-eb0d-4478-ba88-8de0cd8a6732" />
   <img width="30%" height="30%" alt="Add sources repository files" src="https://github.com/user-attachments/assets/f3e9c65a-1446-4f1f-a84f-10f893d0e22e" />
 
