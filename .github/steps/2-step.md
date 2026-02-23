@@ -25,6 +25,9 @@ You will use the prompts below to:
 
 Proceed to the activities and run the provided prompts in your Copilot Space.
 
+> [!IMPORTANT]
+> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 
 - Generate a summary. Should be 3-4 paragraphs covering the main processes OctoAcme uses for project management.
@@ -69,7 +72,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 1. **Create the pull request**: Now send this prompt to create the pull request:
 
    <img width="80%" height="80%" alt="repository issue and pull request creation" src="https://github.com/user-attachments/assets/af469c6a-fc87-454b-9a65-23ffe0d7cd50" />
-   
+
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
@@ -92,7 +95,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
       <img width="70%" height="70%" alt="pull requests" src="https://github.com/user-attachments/assets/88e9876e-2dae-43a4-86ff-29c4cdc6077c" />
 
-   1. You can track progress and view details in **Mission Control** for **agent tasks** by following the task link
+   1. You can track progress of the Copilot Coding Agent and view details in on the left side from **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
       <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/a64c1826-720e-4b5f-8d0f-8aebc9aca501" />
 
@@ -106,8 +109,10 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
    <img width="40%" height="40%" alt="mission control" src="https://github.com/user-attachments/assets/ef0ffd8a-ba8f-4618-a2cc-8e1e0d1bb309" />
 
+Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
+
 > [!NOTE]  
-> The coding agent typically takes 5-15 minutes to complete the work. You can click **View session** to watch the progress if desired.
+> The coding agent typically takes 5-15 minutes to complete the work. If you can track the work that the Copilot Coding Agent is doing from within the pull request by clicking **View session** to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 

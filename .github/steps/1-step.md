@@ -17,8 +17,8 @@ GitHub Copilot Spaces enables teams to centralize and democratize organizational
 
 To get started, you need access to Copilot Spaces and a GitHub Copilot plan with premium request units. Each prompt in a Space counts toward your usage quota, so be mindful of your plan's limits. For more details, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
-> [!NOTE]
-> Questions you submit in a Copilot Space count as Copilot Chat requests. Premium models multiply usage. See [Requests in GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/understanding-and-managing-copilot-usage/understanding-and-managing-requests-in-copilot#model-multipliers) for details.
+> [!IMPORTANT]
+> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### ⌨️ Activity: Create your OctoAcme Project Management Hub Copilot Space
 
@@ -30,7 +30,7 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
    > OctoAcme Project Management Hub
    > ```
 
-1. Click **Save**
+1. Click **Create Space**
 
    <img width="50%" height="50%" alt="Copilot Space Create Space" src="https://github.com/user-attachments/assets/0dcc4d78-1ee0-43cf-85c8-c1d0137aceb0" />
 
@@ -44,15 +44,13 @@ Add a description:
 
 ### ⌨️ Activity: Add instructions to your Copilot Space
 
-- In your newly created Copilot Space, look for the **Instructions** button
+- In your newly created Copilot Space, look for the **Instructions** box and click in the **Instructions** box
+
+ <img width="50%" height="50%" alt="Copilot Spaces Instructions" src="https://github.com/user-attachments/assets/547cdbf9-9238-42af-a06b-7bb168207ec2" />
+
 - Add the following instructions to provide context about the repository and its purpose
 
-  <img width="50%" height="50%" alt="Copilot Spaces Instructions" src="https://github.com/user-attachments/assets/547cdbf9-9238-42af-a06b-7bb168207ec2" />
-  <img width="50%" height="50%" alt="Copilot Spaces Instructions detail" src="https://github.com/user-attachments/assets/628b8534-5f14-48ba-89dc-16eec79617ea" />
-
-- Click **Save**
-
-  > ```markdown
+ > ```markdown
   > ## Program process documents
   >
   > - Stored in `docs/`
@@ -73,10 +71,17 @@ Add a description:
   > - Stored in `.github/ISSUE_TEMPLATE/`
   > ```
 
+  It should looking something like this when you're done:
+
+  <img width="50%" height="50%" alt="Copilot Spaces Instructions detail" src="https://github.com/user-attachments/assets/628b8534-5f14-48ba-89dc-16eec79617ea" />
+
+- Click **Save**
+
+
 ### ⌨️ Activity: Add your cloned repository as a source repository to your Copilot Space
 
-1. In your newly created Copilot Space, look for **Add sources** button
-1. Add this exercise repository as a source:
+1. In your newly created Copilot Space, look for the **Add sources** button
+1. Click **Add files from repository**
    - Copy and paste your GitHub repository for this exercise called out below.
    - You can also type the name in the search and it will come up as well or copy/paste the name below.
 
@@ -86,7 +91,7 @@ Add a description:
 
    - This gives Copilot access to the project management documentation and processes in the repository
 
-1. Select the `docs` and the `.github/ISSUE_TEMPLATE` folders
+1. Select the `docs` and the `.github/ISSUE_TEMPLATE` folders and click **Add**
 1. Verify the repository appears in your sources list
 
   <img width="30%" height="30%" alt="Add sources" src="https://github.com/user-attachments/assets/05268c3f-5270-4e60-bc87-69fc27b1df72" />
@@ -95,8 +100,7 @@ Add a description:
 
 ### ⌨️ Activity: Create an issue in the repository for a README for OctoAcme Project Management Docs
 
-- Open your Copilot Space you created above. https://github.com/copilot/spaces
-- In the conversation interface prompt the following:
+- In the conversation interface for Copilot, prompt the following:
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >

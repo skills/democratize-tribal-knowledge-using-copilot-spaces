@@ -19,7 +19,7 @@ Effective process evolution follows a lightweight cycle:
 - Measure adoption and revisit as new insights emerge
 
 > [!IMPORTANT]
-> Use the **GPT-4.1** model for all conversations with Copilot Spaces.
+> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### ⌨️ Activity: Attach an issue template and create an issue for process improvements
 
@@ -36,7 +36,6 @@ _Use the following prompt in a new Copilot Space conversation:_
 
      <img width="30%" height="30%" alt="Attach" src="https://github.com/user-attachments/assets/2a447ff9-76d7-462f-9292-4663c8dc0fc9" />
      <img width="30%" height="30%" alt="Attach files" src="https://github.com/user-attachments/assets/6ac6e33d-b333-424f-b431-e3feb7022b84" />
-
      <img width="30%" height="30%" alt="Attach issue template conversation" src="https://github.com/user-attachments/assets/5fc71905-ede6-45cb-bcfa-93d2797160b2" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
@@ -72,11 +71,15 @@ In the same Copilot Space conversation do the following:
 > - Make sure the issue below matches the issue you want to attach
 > - Hit **\<SHIFT\> + \<ENTER\>** so you don't start Copilot working on the conversation
 
+In case the issue is not attached properly, you can also type the issue reference in the conversation:
+
 Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues) </br>
 
-> ```text
-> @{{full_repo_name}}/issues/4
-> ```
+```text
+@{{full_repo_name}}/issues/#
+```
+
+(Example: if your issue is #4, type `@{{full_repo_name}}/issues/4`)
 
    <img width="40%" height="40%" alt="repository issue and pull request creation" src="https://github.com/user-attachments/assets/cf4f0c32-76cb-429d-b607-f65f444b07d5" />
 

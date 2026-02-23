@@ -22,8 +22,8 @@ You've successfully used GitHub Copilot Spaces to transform tribal knowledge int
 
 Take another GitHub Skills exercise on [GitHub Learn](https://learn.github.com/skills):
 
-- [Expand your team with Copilot](https://github.com/skills/expand-your-team-with-copilot)
-- [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) - Learn how to extend Copilot with Model Context Protocol. You will learn about MCP tools which can also be used in chatmodes and prompts!
+- [Create applications with the Copilot CLI](https://github.com/skills/create-applications-with-the-copilot-cli) - Learn how to use the Copilot CLI to build applications with natural language prompts.
+- [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) - Learn how to extend Copilot with Model Context Protocol. You will learn about MCP tools which can also be used in chat modes and prompts!
 - [Modernize Legacy Code](https://github.com/skills/modernize-your-legacy-code-with-github-copilot) - Use Copilot to help refactor and improve existing codebases.
 - [Build Applications with Copilot agent mode](https://github.com/skills/build-applications-w-copilot-agent-mode) - Explore building applications using the Copilot Agent mode for enhanced interactivity.
 
