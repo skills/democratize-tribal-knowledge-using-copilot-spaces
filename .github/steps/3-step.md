@@ -83,7 +83,7 @@ In the same Copilot Space conversation do the following:
 
 1. In this activity we will attach the issue you created in the previous activity
 2. This will assign the issue to the coding agent to create a pull request with an update to our personas/roles document in the `docs/` folder
-3. Copy and paste the url for the issue that we created in the previous activity.
+3. Copy and paste the URL for the issue that we created in the previous activity.
 
 > [!NOTE]
 > Make sure the issue below matches the issue you want to attach
