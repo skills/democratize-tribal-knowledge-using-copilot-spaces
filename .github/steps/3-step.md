@@ -85,8 +85,7 @@ In the same Copilot Space conversation do the following:
 2. This will assign the issue to the coding agent to create a pull request with an update to our personas/roles document in the `docs/` folder
 3. Copy and paste the url for the issue that we created in the previous activity.
 
-> [!NOTE]
-> Make sure the issue below matches the issue you want to attach
+> 🪧 **Note:** Make sure the issue below matches the issue you want to attach.
 > Hit **\<SHIFT\> + \<ENTER\>** so you don't start Copilot working on the conversation
 
 In case the issue is not attached properly, you can also type the issue reference in the conversation:
@@ -147,8 +146,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
    <img width="40%" alt="check-open-prs" src="../images/check-open-prs-3.png" />
 
-> [!NOTE]
-> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> 🪧 **Note:** The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
