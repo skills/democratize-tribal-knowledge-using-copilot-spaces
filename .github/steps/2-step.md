@@ -48,12 +48,12 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
    > - Focus on key workflows, personas/roles, communication strategies, and quality assurance practices.
    > ```
 
-<details>
-<summary> 📷 Show screenshot of the conversation output</summary>
+   <details>
+   <summary> 📷 Show screenshot of the conversation output</summary>
 
-<img width="50%" alt="copilot-spaces-conversation-summary-output" src="../images/copilot-spaces-conversation-summary-output.png" />
+   <img width="50%" alt="copilot-spaces-conversation-summary-output" src="../images/copilot-spaces-conversation-summary-output.png" />
 
-</details>
+   </details>
 
 ### ⌨️ Activity: Attach an issue and create a pull request for the Copilot coding agent
 
@@ -66,9 +66,9 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 > [!IMPORTANT]
 > After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
 
-```text
-@{{full_repo_name}}/issues/#
-```
+   ```text
+   @{{full_repo_name}}/issues/#
+   ```
 
 (Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
 

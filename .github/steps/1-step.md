@@ -34,14 +34,14 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
 
    <img width="50%" alt="copilot-spaces-create-space" src="../images/copilot-spaces-create-space.png" />
 
-Add a description:
+   Add a description:
 
-   > ```text
-   > Centralizing and democratizing project management knowledge
-   > for the OctoAcme organization
-   > ```
+      > ```text
+      > Centralizing and democratizing project management knowledge
+      > for the OctoAcme organization
+      > ```
 
-   <img width="50%" alt="copilot-spaces-description" src="../images/copilot-spaces-description.png" />
+      <img width="50%" alt="copilot-spaces-description" src="../images/copilot-spaces-description.png" />
 
 ### ⌨️ Activity: Add instructions to your Copilot Space
 
@@ -94,9 +94,9 @@ Add a description:
 1. Select the `docs` and the `.github/ISSUE_TEMPLATE` folders and click **Add**
 1. Verify the repository appears in your sources list
 
-  <img width="30%" alt="add-sources" src="../images/add-sources.png" />
-  <img width="30%" alt="add-sources-repository" src="../images/add-sources-repository.png" />
-  <img width="30%" alt="add-sources-repository-files" src="../images/add-sources-repository-files.png" />
+   <img width="30%" alt="add-sources" src="../images/add-sources.png" />
+   <img width="30%" alt="add-sources-repository" src="../images/add-sources-repository.png" />
+   <img width="30%" alt="add-sources-repository-files" src="../images/add-sources-repository-files.png" />
 
 ### ⌨️ Activity: Create an issue in the repository for a README for OctoAcme Project Management Docs
 

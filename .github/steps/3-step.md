@@ -60,20 +60,20 @@ Effective process evolution follows a lightweight cycle:
   > - add to the process document `docs/octoacme-roles-and-personas.md`
   > ```
 
-<details>
-<summary> 📷 Show screenshot of the issue draft</summary>
+   <details>
+   <summary> 📷 Show screenshot of the issue draft</summary>
 
-<img width="50%" alt="personas-roles-issue-draft" src="../images/personas-roles-issue-draft.png" />
+   <img width="50%" alt="personas-roles-issue-draft" src="../images/personas-roles-issue-draft.png" />
 
-</details>
-You can copy or open the link in a new tab to see the newly created issue
+   </details>
+   You can copy or open the link in a new tab to see the newly created issue
 
-<details>
-<summary> 📷 Show screenshot of the created issue</summary>
+   <details>
+   <summary> 📷 Show screenshot of the created issue</summary>
 
-<img width="50%" alt="personas-roles-issue-created" src="../images/personas-roles-issue-created.png" />
+   <img width="50%" alt="personas-roles-issue-created" src="../images/personas-roles-issue-created.png" />
 
-</details>
+   </details>
 
 ### ⌨️ Activity: Attach an issue and create a Pull Request
 
@@ -89,29 +89,29 @@ In the same Copilot Space conversation do the following:
 > Make sure the issue below matches the issue you want to attach
 > Hit **\<SHIFT\> + \<ENTER\>** so you don't start Copilot working on the conversation
 
-In case the issue is not attached properly, you can also type the issue reference in the conversation:
+   In case the issue is not attached properly, you can also type the issue reference in the conversation:
 
-Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues)
+   Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues)
 
-```text
-@{{full_repo_name}}/issues/#
-```
+   ```text
+   @{{full_repo_name}}/issues/#
+   ```
 
-(Example: if your issue is #4, type `@{{full_repo_name}}/issues/4`)
+   (Example: if your issue is #4, type `@{{full_repo_name}}/issues/4`)
 
    <img width="40%" alt="repository-issue-pr-creation" src="../images/repository-issue-pr-creation-step3.png" />
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
->
-> ```prompt
-> - Using the github-coding-agent tool create a pull request that implements process improvements
->   based on the analysis we did earlier.
-> - The improvements should address gaps or inefficiencies identified in the project management documentation.
-> - The pull request should include updates to existing docs or new templates/checklists as needed.
-> - All documents should be in the `docs/` folder
-> - Add this pull request to the attached issue.
-> - Add {{login}} as a reviewer for this pull request
-> ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > - Using the github-coding-agent tool create a pull request that implements process improvements
+   >   based on the analysis we did earlier.
+   > - The improvements should address gaps or inefficiencies identified in the project management documentation.
+   > - The pull request should include updates to existing docs or new templates/checklists as needed.
+   > - All documents should be in the `docs/` folder
+   > - Add this pull request to the attached issue.
+   > - Add {{login}} as a reviewer for this pull request
+   > ```
 
 4. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
