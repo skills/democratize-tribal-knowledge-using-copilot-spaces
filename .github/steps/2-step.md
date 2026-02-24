@@ -125,7 +125,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
 
 > [!NOTE]  
-> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
