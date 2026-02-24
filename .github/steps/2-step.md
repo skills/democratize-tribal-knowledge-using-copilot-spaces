@@ -70,7 +70,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    @{{full_repo_name}}/issues/#
    ```
 
-(Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
+   (Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
 
 3. **Verify the issue is attached**: You should see the issue title and details appear in your conversation
 
