@@ -38,7 +38,7 @@ Effective process evolution follows a lightweight cycle:
 
    <img width="40%" alt="add-sources-repository" src="../images/add-sources-repository.png" />
 
-1. Select the issue template to this new Copilot Space conversation. </br>
+1. Select the issue template to this new Copilot Space conversation. <br />
   `.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`
 
      <img width="30%" alt="add-issue-template" src="../images/add-issue-template.png" />
