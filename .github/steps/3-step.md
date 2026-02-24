@@ -149,7 +149,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
    <img width="40%" alt="check-open-prs" src="../images/check-open-prs-3.png" />
 
 > [!NOTE]  
-> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
