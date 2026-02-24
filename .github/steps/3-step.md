@@ -23,29 +23,29 @@ Effective process evolution follows a lightweight cycle:
 
 ### ⌨️ Activity: Attach an issue template and create an issue for process improvements
 
-  <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
+   <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
 
-- Add your files from the repository to the conversation by clicking on <img width="5%" alt="add-files-plus" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
+1. Add your files from the repository to the conversation by clicking on <img width="5%" alt="add-files-plus" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
 
    <img width="50%" alt="add-issue-template" src="../images/copilot-spaces-chat-plus.png" />
    <img width="30%" alt="add-files" src="../images/add-files.png" />
 
-- Select your repository or copy and paste the repository name in the search bar to find it:
+1. Select your repository or copy and paste the repository name in the search bar to find it:
 
-  > ```text
-  > {{full_repo_name}}
-  > ```
+   > ```text
+   > {{full_repo_name}}
+   > ```
 
    <img width="40%" alt="add-sources-repository" src="../images/add-sources-repository.png" />
 
-- Select the issue template to this new Copilot Space conversation. </br>
+1. Select the issue template to this new Copilot Space conversation. </br>
   `.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`
 
      <img width="30%" alt="add-issue-template" src="../images/add-issue-template.png" />
 
-- Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
+1. Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
 
-<img width="40%" alt="add-issue-template" src="../images/copilot-spaces-chat.png" />
+   <img width="40%" alt="add-issue-template" src="../images/copilot-spaces-chat.png" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -86,9 +86,8 @@ In the same Copilot Space conversation do the following:
 3. Copy and paste the url for the issue that we created in the previous activity.
 
 > [!NOTE]
->
-> - Make sure the issue below matches the issue you want to attach
-> - Hit **\<SHIFT\> + \<ENTER\>** so you don't start Copilot working on the conversation
+> Make sure the issue below matches the issue you want to attach
+> Hit **\<SHIFT\> + \<ENTER\>** so you don't start Copilot working on the conversation
 
 In case the issue is not attached properly, you can also type the issue reference in the conversation:
 
@@ -148,7 +147,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
    <img width="40%" alt="check-open-prs" src="../images/check-open-prs-3.png" />
 
-> [!NOTE]  
+> [!NOTE]
 > The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:

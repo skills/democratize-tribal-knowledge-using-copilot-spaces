@@ -62,14 +62,14 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 1. **Attach the issue to your conversation**: In your Copilot Space, type the following (replace `#` with your actual issue number):
 
-> [!IMPORTANT]
-> After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
+   > [!IMPORTANT]
+   > After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
 
-```text
-@{{full_repo_name}}/issues/#
-```
+   ```text
+   @{{full_repo_name}}/issues/#
+   ```
 
-(Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
+   (Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
 
 1. **Verify the issue is attached**: You should see the issue title and details appear in your conversation
 
@@ -124,7 +124,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
 
-> [!NOTE]  
+> [!NOTE]
 > The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:

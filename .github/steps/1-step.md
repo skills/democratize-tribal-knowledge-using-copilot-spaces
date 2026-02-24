@@ -36,9 +36,10 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
 
 Add a description:
 
-> ```text
-> Centralizing and democratizing project management knowledge for the OctoAcme organization
-> ```
+   > ```text
+   > Centralizing and democratizing project management knowledge
+   > for the OctoAcme organization
+   > ```
 
    <img width="50%" alt="copilot-spaces-description" src="../images/copilot-spaces-description.png" />
 
@@ -76,7 +77,6 @@ Add a description:
   <img width="50%" alt="copilot-spaces-instructions-detail" src="../images/copilot-spaces-instructions-detail.png" />
 
 - Click **Save**
-
 
 ### ⌨️ Activity: Add your cloned repository as a source repository to your Copilot Space
 
