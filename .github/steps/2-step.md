@@ -30,22 +30,22 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
 
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 
-- Generate a summary. Should be 3-4 paragraphs covering the main processes OctoAcme uses for project management.
-- Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces and select **Yours** and select **"OctoAcme Project Management Hub"**
-  
-  <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
+1. Generate a summary. Should be 3-4 paragraphs covering the main processes OctoAcme uses for project management.
+Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces and select **Yours** and select **"OctoAcme Project Management Hub"**
 
-- Start a new conversation in the Copilot Space and prompt the following:
+   <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
+
+2. Start a new conversation in the Copilot Space and prompt the following:
 
   <img width="70%" alt="copilot-spaces-conversation-summary" src="../images/copilot-spaces-conversation-summary.png" />
 
-  > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-  >
-  > ```prompt
-  > - Create a 3-4 paragraph summary of the project management processes used by OctoAcme
-  >   based on the documentation in the docs folder of this repository.
-  > - Focus on key workflows, personas/roles, communication strategies, and quality assurance practices.
-  > ```
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+>
+> ```prompt
+> - Create a 3-4 paragraph summary of the project management processes used by OctoAcme
+>   based on the documentation in the docs folder of this repository.
+> - Focus on key workflows, personas/roles, communication strategies, and quality assurance practices.
+> ```
 
 <details>
 <summary> 📷 Show screenshot of the conversation output</summary>
@@ -60,20 +60,20 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 1. **Find your issue number**: Go to [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues) and note the issue number from Step 1 (it should be about creating a README for project management docs)
 
-1. **Attach the issue to your conversation**: In your Copilot Space, type the following (replace `#` with your actual issue number):
+2. **Attach the issue to your conversation**: In your Copilot Space, type the following (replace `#` with your actual issue number):
 
-   > [!IMPORTANT]
-   > After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
+> [!IMPORTANT]
+> After typing the issue reference below, press **\<SHIFT\> + \<ENTER\>** to add it to the conversation without sending the message yet.
 
-   ```text
-   @{{full_repo_name}}/issues/#
-   ```
+```text
+@{{full_repo_name}}/issues/#
+```
 
-   (Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
+(Example: if your issue is #2, type `@{{full_repo_name}}/issues/2`)
 
-1. **Verify the issue is attached**: You should see the issue title and details appear in your conversation
+3. **Verify the issue is attached**: You should see the issue title and details appear in your conversation
 
-1. **Create the pull request**: Now send this prompt to create the pull request:
+4. **Create the pull request**: Now send this prompt to create the pull request:
 
    <img width="80%" alt="repository-issue-pr-creation" src="../images/repository-issue-pr-creation-step2.png" />
 
@@ -88,11 +88,11 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > - Add {{login}} as a reviewer for the pull request
    > ```
 
-1. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
+5. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
    <img width="50%" alt="copilot-coding-agent-allow" src="../images/copilot-coding-agent-allow.png" />
 
-1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
+6. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
 
    There are two ways you can check the status of the coding agent working on your pull request
 
@@ -112,7 +112,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
       <img width="40%" alt="view-pull-request" src="../images/view-pull-request.png" />
 
-1. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
+7. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -122,12 +122,12 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
    <img width="40%" alt="check-open-prs" src="../images/check-open-prs-2.png" />
 
-Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
+   Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
 
 > [!NOTE]
 > The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
-1. **Review and merge**: Once the pull request is ready:
+8. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 

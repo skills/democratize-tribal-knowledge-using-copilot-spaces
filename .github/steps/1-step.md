@@ -45,38 +45,38 @@ Add a description:
 
 ### ⌨️ Activity: Add instructions to your Copilot Space
 
-- In your newly created Copilot Space, look for the **Instructions** box and click in the **Instructions** box
+1. In your newly created Copilot Space, look for the **Instructions** box and click in the **Instructions** box
 
- <img width="50%" alt="copilot-spaces-instructions" src="../images/copilot-spaces-instructions.png" />
+   <img width="50%" alt="copilot-spaces-instructions" src="../images/copilot-spaces-instructions.png" />
 
-- Add the following instructions to provide context about the repository and its purpose
+1. Add the following instructions to provide context about the repository and its purpose
 
- > ```markdown
-  > ## Program process documents
-  >
-  > - Stored in `docs/`
-  >
-  > ### Purpose of this Copilot Space
-  >
-  > - Centralize scattered project management knowledge in Copilot Spaces
-  > - Convert tacit team insights into searchable, versioned artifacts
-  > - Give all team members equal access to processes, decisions, and rationale
-  > - Connect a repository as a structured knowledge source
-  > - Extract, refine, and standardize workflows collaboratively
-  > - Feed validated improvements back into living documentation
-  > - Accelerate onboarding and reduce single-person dependency risk
-  > - Enable consistent, repeatable project execution
-  >
-  > ## Issue templates for program process documents
-  >
-  > - Stored in `.github/ISSUE_TEMPLATE/`
-  > ```
+   > ```markdown
+   > ## Program process documents
+   >
+   > - Stored in `docs/`
+   >
+   > ### Purpose of this Copilot Space
+   >
+   > - Centralize scattered project management knowledge in Copilot Spaces
+   > - Convert tacit team insights into searchable, versioned artifacts
+   > - Give all team members equal access to processes, decisions, and rationale
+   > - Connect a repository as a structured knowledge source
+   > - Extract, refine, and standardize workflows collaboratively
+   > - Feed validated improvements back into living documentation
+   > - Accelerate onboarding and reduce single-person dependency risk
+   > - Enable consistent, repeatable project execution
+   >
+   > ## Issue templates for program process documents
+   >
+   > - Stored in `.github/ISSUE_TEMPLATE/`
+   > ```
 
-  It should look something like this when you're done:
+   It should look something like this when you're done:
 
-  <img width="50%" alt="copilot-spaces-instructions-detail" src="../images/copilot-spaces-instructions-detail.png" />
+   <img width="50%" alt="copilot-spaces-instructions-detail" src="../images/copilot-spaces-instructions-detail.png" />
 
-- Click **Save**
+1. Click **Save**
 
 ### ⌨️ Activity: Add your cloned repository as a source repository to your Copilot Space
 
