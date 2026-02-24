@@ -113,11 +113,11 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 > - Add {{login}} as a reviewer for this pull request
 > ```
 
-1. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
+4. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
    <img width="50%" alt="copilot-coding-agent-allow" src="../images/copilot-coding-agent-allow.png" />
 
-1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
+5. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
 
    There are two ways you can check the status of the coding agent working on your pull request
 
@@ -137,7 +137,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
       <img width="40%" alt="view-pull-request" src="../images/view-pull-request.png" />
 
-1. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
+6. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -150,7 +150,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 > [!NOTE]
 > The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
-1. **Review and merge**: Once the pull request is ready:
+7. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 
