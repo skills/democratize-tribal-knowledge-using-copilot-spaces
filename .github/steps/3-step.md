@@ -27,7 +27,7 @@ Effective process evolution follows a lightweight cycle:
 
 1. Add your files from the repository to the conversation by clicking on <img width="5%" alt="add-files-plus" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
 
-   <img width="50%" alt="add-issue-template" src="../images/copilot-spaces-chat-plus.png" />
+   <img width="50%" alt="copilot-spaces-chat-plus" src="../images/copilot-spaces-chat-plus.png" />
    <img width="30%" alt="add-files" src="../images/add-files.png" />
 
 1. Select your repository or copy and paste the repository name in the search bar to find it:
@@ -45,7 +45,7 @@ Effective process evolution follows a lightweight cycle:
 
 1. Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
 
-   <img width="40%" alt="add-issue-template" src="../images/copilot-spaces-chat.png" />
+   <img width="40%" alt="copilot-spaces-chat" src="../images/copilot-spaces-chat.png" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -131,7 +131,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
    You can track the progress of the Copilot coding agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
-      <img width="40%" alt="agent-session-2" src="../images/agent-sessions-2.png" />
+      <img width="40%" alt="agent-session" src="../images/agent-sessions-2.png" />
 
    You can get to the pull request that the agent is working on by clicking the link in the session details at the bottom where it says **View pull request**.
 

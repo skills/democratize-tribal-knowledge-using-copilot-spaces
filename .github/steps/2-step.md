@@ -31,21 +31,22 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 
 1. Generate a summary. Should be 3-4 paragraphs covering the main processes OctoAcme uses for project management.
-Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces and select **Yours** and select **"OctoAcme Project Management Hub"**
+
+   Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces and select **Yours** and select **"OctoAcme Project Management Hub"**
 
    <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
 
 2. Start a new conversation in the Copilot Space and prompt the following:
 
-  <img width="70%" alt="copilot-spaces-conversation-summary" src="../images/copilot-spaces-conversation-summary.png" />
+   <img width="70%" alt="copilot-spaces-conversation-summary" src="../images/copilot-spaces-conversation-summary.png" />
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
->
-> ```prompt
-> - Create a 3-4 paragraph summary of the project management processes used by OctoAcme
->   based on the documentation in the docs folder of this repository.
-> - Focus on key workflows, personas/roles, communication strategies, and quality assurance practices.
-> ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > - Create a 3-4 paragraph summary of the project management processes used by OctoAcme
+   >   based on the documentation in the docs folder of this repository.
+   > - Focus on key workflows, personas/roles, communication strategies, and quality assurance practices.
+   > ```
 
 <details>
 <summary> 📷 Show screenshot of the conversation output</summary>
