@@ -90,7 +90,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 1. **Allow the coding agent**: When prompted, select **Allow** to let the coding agent work on your repository
 
-   <img width="50%" height="50%" alt="Copilot coding agent allow" src="https://github.com/user-attachments/assets/b0c92c04-d12b-4c5e-b682-33643b90ee11" />
+   <img width="50%" alt="copilot-coding-agent-allow" src="../images/copilot-coding-agent-allow.png" />
 
 1. **Monitor progress**: You should receive a notification that the Copilot coding agent is working on your pull request.
 
@@ -125,7 +125,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 Click the link to the pull request in the Copilot Space to view the PR details and monitor the coding agent's progress.
 
 > [!NOTE]  
-> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Coding Agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 

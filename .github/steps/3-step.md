@@ -30,7 +30,7 @@ Effective process evolution follows a lightweight cycle:
    <img width="50%" alt="add-issue-template" src="../images/copilot-spaces-chat-plus.png" />
    <img width="30%" alt="add-files" src="../images/add-files.png" />
 
-- Select your repository or copy and paste the repository name in the search bar to find it: </br>
+- Select your repository or copy and paste the repository name in the search bar to find it:
 
   > ```text
   > {{full_repo_name}}
@@ -83,7 +83,7 @@ In the same Copilot Space conversation do the following:
 
 1. In this activity we will attach the issue you created in the previous activity
 2. This will assign the issue to the coding agent to create a pull request with an update to our personas/roles document in the `docs/` folder
-3. Copy and paste the url for the issue that we created in the previous activity. </br>
+3. Copy and paste the url for the issue that we created in the previous activity.
 
 > [!NOTE]
 >
@@ -92,7 +92,7 @@ In the same Copilot Space conversation do the following:
 
 In case the issue is not attached properly, you can also type the issue reference in the conversation:
 
-Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues) </br>
+Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github.com/{{full_repo_name}}/issues)
 
 ```text
 @{{full_repo_name}}/issues/#
@@ -130,7 +130,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
    #### Option 2: Check Agent Sessions in your Copilot Space on the left side under Agent sessions
 
-   You can track the progress of the Copilot Coding Agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
+   You can track the progress of the Copilot coding agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
       <img width="40%" alt="agent-session-2" src="../images/agent-sessions-2.png" />
 
@@ -149,7 +149,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
    <img width="40%" alt="check-open-prs" src="../images/check-open-prs-3.png" />
 
 > [!NOTE]  
-> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Coding Agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The coding agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot coding agent is doing from within the pull request by clicking **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
 
 1. **Review and merge**: Once the pull request is ready:
 
