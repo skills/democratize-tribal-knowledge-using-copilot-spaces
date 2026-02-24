@@ -130,7 +130,7 @@ Check issues list: [https://github.com/{{full_repo_name}}/issues](https://github
 
    #### Option 2: Check Agent Sessions in your Copilot Space on the left side under Agent sessions
 
-   You can track progress of the Copilot Coding Agent and view details in on the left side from **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
+   You can track the progress of the Copilot Coding Agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
       <img width="40%" alt="agent-session-2" src="../images/agent-sessions-2.png" />
 
