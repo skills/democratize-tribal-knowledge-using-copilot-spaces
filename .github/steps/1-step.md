@@ -71,7 +71,7 @@ Add a description:
   > - Stored in `.github/ISSUE_TEMPLATE/`
   > ```
 
-  It should looking something like this when you're done:
+  It should look something like this when you're done:
 
   <img width="50%" alt="copilot-spaces-instructions-detail" src="../images/copilot-spaces-instructions-detail.png" />
 
