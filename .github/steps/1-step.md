@@ -116,6 +116,8 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
 
 You can then add this issue to your repository by clicking the **Create** button.
 
+If Copilot responds that it cannot create issues in your current environment, ask it to draft the issue title and body using the same requirements, then create the issue manually in [{{full_repo_name}}/issues/new/choose](https://github.com/{{full_repo_name}}/issues/new/choose) with the **Add Content to Project Management Process Docs** template.
+
 <details>
 <summary> 📷 Show screenshot of the issue draft</summary>
 
@@ -137,5 +139,6 @@ You can copy or open the link in a new tab to see the newly created issue
 - Make sure you have access to GitHub Copilot Spaces and that your repository is added as a source
 - The repository should be publicly accessible for Copilot to index it
 - Repository indexing can take seconds to minutes depending on size
+- If Copilot cannot create the issue directly, have it draft the issue content and create it manually from the template at [{{full_repo_name}}/issues/new/choose](https://github.com/{{full_repo_name}}/issues/new/choose)
 
 </details>
