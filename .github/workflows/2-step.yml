@@ -1,7 +1,7 @@
 name: Step 2
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
     types:
@@ -25,6 +25,7 @@ jobs:
   # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
   check_step_work:
     name: Check step work
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     needs: [find_exercise]
     env:
@@ -105,6 +106,7 @@ jobs:
 
   post_next_step_content:
     name: Post next step content
+    if: github.event.pull_request.merged == true
     needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:

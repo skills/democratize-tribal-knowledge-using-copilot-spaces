@@ -1,7 +1,7 @@
 name: Step 3 # Last step of the exercise
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
     types:
@@ -24,6 +24,7 @@ jobs:
 
   post_review_content:
     name: Post review content
+    if: github.event.pull_request.merged == true
     needs: [find_exercise] # if check_step_work then "needs: [find_exercise, check_step_work]"
     runs-on: ubuntu-latest
     env:
@@ -62,6 +63,7 @@ jobs:
 
   finish_exercise:
     name: Finish Exercise
+    if: github.event.pull_request.merged == true
     needs: [find_exercise, post_review_content]
     uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.8.1
     with:
