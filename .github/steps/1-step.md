@@ -116,6 +116,11 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
 
 You can then add this issue to your repository by clicking the **Create** button.
 
+> [!NOTE]
+> If an issue is not created, click the **Retry** button shown below
+
+<img width="215" alt="Retry button to regenerate an issue in Copilot Space" src="../images/retry-copilot-space.png" />
+
 <details>
 <summary> 📷 Show screenshot of the issue draft</summary>
 
