@@ -115,9 +115,9 @@ In the same Copilot Space conversation do the following:
    > ```
 
 > [!NOTE]
-> If an issue or pull request is not created, click the retry button shown below
+> If an issue or pull request is not created, click the **Retry** button shown below
 
-<img width="20%" alt="retry-copilot-space" src="../images/retry-copilot-space.png" />
+<img width="20%" alt="Screenshot showing the Retry button in Copilot Space" src="../images/retry-copilot-space.png" />
 
 4. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
