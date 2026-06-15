@@ -119,7 +119,7 @@ You can then add this issue to your repository by clicking the **Create** button
 > [!NOTE]
 > If an issue is not created, click the **Retry** button shown below
 
-<img width="20%" alt="Retry button to regenerate an issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
+<img width="40%" alt="Retry button to regenerate an issue in Copilot Space" src="../images/retry-copilot-space.png" />
 
 <details>
 <summary> 📷 Show screenshot of the issue draft</summary>
