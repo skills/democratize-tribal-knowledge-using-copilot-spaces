@@ -89,6 +89,11 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > - Add {{login}} as a reviewer for the pull request
    > ```
 
+> [!NOTE]
+> If an issue or pull request is not created click the retry button shown below
+
+<img width="20%" alt="retry-copilot-space" src="../images/retry-copilot-space.png" />
+
 5. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
    <img width="100%" alt="copilot-cloud-agent-allow" src="../images/copilot-cloud-agent-allow.png" />
