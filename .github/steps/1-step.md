@@ -18,7 +18,14 @@ GitHub Copilot Spaces enables teams to centralize and democratize organizational
 To get started, you need access to Copilot Spaces and a GitHub Copilot plan with premium request units. Each prompt in a Space counts toward your usage quota, so be mindful of your plan's limits. For more details, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 > [!IMPORTANT]
-> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> If you are using a Copilot free plan or are concerned with impacting usage based billing, use "**Auto**". These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans, [Usage Based Billing for individuals](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals), and [Usage Based Billing for Enterprises and Organizations](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
+
+> [!IMPORTANT]
+> Before starting this GitHub Skills exercise make sure
+> **Settings** --> **Actions** --> **General** (part way down) shown in the following image
+> "**Require approval for first-time contributors who are new to GitHub**"
+
+<img width="50%" alt="copilot-spaces-create-space" src="../images/settings-actions-general-approvals.png" />
 
 ### ⌨️ Activity: Create your OctoAcme Project Management Hub Copilot Space
 
