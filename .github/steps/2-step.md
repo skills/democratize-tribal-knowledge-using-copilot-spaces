@@ -92,7 +92,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 > [!NOTE]
 > If an issue or pull request is not created, click the **Retry** button shown below
 
-<img width="20%" alt="Screenshot showing the Retry button in Copilot Space" src="../images/retry-copilot-space.png" />
+<img width="20%" alt="Retry button to regenerate an issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
 
 5. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
