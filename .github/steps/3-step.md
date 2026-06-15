@@ -115,7 +115,7 @@ In the same Copilot Space conversation do the following:
    > ```
 
 > [!NOTE]
-> If an issue or pull request is not created click the retry button shown below
+> If an issue or pull request is not created, click the retry button shown below
 
 <img width="20%" alt="retry-copilot-space" src="../images/retry-copilot-space.png" />
 
