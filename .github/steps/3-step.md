@@ -23,12 +23,12 @@ Effective process evolution follows a lightweight cycle:
 
 ### ⌨️ Activity: Attach an issue template and create an issue for process improvements
 
-   <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
+   <img width="50%" alt="The Yours tab in Copilot Spaces listing your spaces" src="../images/copilot-spaces-yours.png" />
 
-1. Add your files from the repository to the conversation by clicking on <img width="5%" alt="add-files-plus" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
+1. Add your files from the repository to the conversation by clicking on <img width="5%" alt="Add files plus button in a Copilot Space conversation" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
 
-   <img width="50%" alt="copilot-spaces-chat-plus" src="../images/copilot-spaces-chat-plus.png" />
-   <img width="30%" alt="add-files" src="../images/add-files.png" />
+   <img width="50%" alt="Plus menu in the Copilot Space conversation showing the Files option" src="../images/copilot-spaces-chat-plus.png" />
+   <img width="30%" alt="Files option in the Copilot Space add sources menu" src="../images/add-files.png" />
 
 1. Select your repository or copy and paste the repository name in the search bar to find it:
 
@@ -36,17 +36,17 @@ Effective process evolution follows a lightweight cycle:
    > {{full_repo_name}}
    > ```
 
-   <img width="40%" alt="add-sources-repository" src="../images/add-sources-repository.png" />
+   <img width="40%" alt="Selecting a repository as a source in a Copilot Space" src="../images/add-sources-repository.png" />
 
 1. Select the issue template to this new Copilot Space conversation.
 
    `.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`
 
-     <img width="30%" alt="add-issue-template" src="../images/add-issue-template.png" />
+     <img width="30%" alt="Attaching the issue template file to the Copilot Space conversation" src="../images/add-issue-template.png" />
 
 1. Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
 
-   <img width="40%" alt="copilot-spaces-chat" src="../images/copilot-spaces-chat.png" />
+   <img width="40%" alt="Copilot Space conversation input box" src="../images/copilot-spaces-chat.png" />
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -64,7 +64,7 @@ Effective process evolution follows a lightweight cycle:
    <details>
    <summary> 📷 Show screenshot of the issue draft</summary>
 
-   <img width="50%" alt="personas-roles-issue-draft" src="../images/personas-roles-issue-draft.png" />
+   <img width="50%" alt="Draft of the personas and roles improvement issue in Copilot Space" src="../images/personas-roles-issue-draft.png" />
 
    </details>
    You can copy or open the link in a new tab to see the newly created issue
@@ -72,7 +72,7 @@ Effective process evolution follows a lightweight cycle:
    <details>
    <summary> 📷 Show screenshot of the created issue</summary>
 
-   <img width="50%" alt="personas-roles-issue-created" src="../images/personas-roles-issue-created.png" />
+   <img width="50%" alt="The created personas and roles improvement issue in the repository" src="../images/personas-roles-issue-created.png" />
 
    </details>
 
@@ -100,7 +100,7 @@ In the same Copilot Space conversation do the following:
 
    (Example: if your issue is #4, type `@{{full_repo_name}}/issues/4`)
 
-   <img width="40%" alt="repository-issue-pr-creation" src="../images/repository-issue-pr-creation-step3.png" />
+   <img width="40%" alt="Prompt to create a pull request from the attached personas and roles issue in Copilot Space" src="../images/repository-issue-pr-creation-step3.png" />
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -117,11 +117,11 @@ In the same Copilot Space conversation do the following:
 > [!NOTE]
 > If an issue or pull request is not created, click the **Retry** button shown below
 
-<img width="215" alt="Retry button to regenerate an issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
+<img width="215" alt="Retry button to regenerate the issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
 
 4. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
-   <img width="100%" alt="copilot-cloud-agent-allow" src="../images/copilot-cloud-agent-allow.png" />
+   <img width="100%" alt="Allow prompt granting the Copilot coding agent access to the repository" src="../images/copilot-cloud-agent-allow.png" />
 
 5. **Monitor progress**: You should receive a notification that the Copilot Cloud Agent is working on your pull request.
 
@@ -131,17 +131,17 @@ In the same Copilot Space conversation do the following:
 
    Go to your repository and click **Pull requests** and select the pull request to see the progress:
 
-      <img width="70%" alt="pull-requests" src="../images/pull-requests.png" />
+      <img width="70%" alt="Pull requests tab in the repository showing the open pull request" src="../images/pull-requests.png" />
 
    #### Option 2: Check Agent Sessions in your Copilot Space on the left side under Agent sessions
 
    You can track the progress of the Copilot Cloud Agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
-      <img width="40%" alt="agent-session" src="../images/agent-sessions-2.png" />
+      <img width="40%" alt="Agent sessions panel in the Copilot Space showing session details" src="../images/agent-sessions-2.png" />
 
    You can get to the pull request that the agent is working on by clicking the link in the session details at the bottom where it says **View pull request**.
 
-      <img width="40%" alt="view-pull-request" src="../images/view-pull-request.png" />
+      <img width="40%" alt="View pull request link in the Copilot Space session details" src="../images/view-pull-request.png" />
 
 6. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
@@ -151,23 +151,23 @@ In the same Copilot Space conversation do the following:
    > check open pull requests
    > ```
 
-   <img width="40%" alt="check-open-prs" src="../images/check-open-prs-3.png" />
+   <img width="40%" alt="Copilot Space response listing the open pull request" src="../images/check-open-prs-3.png" />
 
 > [!NOTE]
-> The Copilot Cloud Agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Cloud Agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The Copilot Cloud Agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Cloud Agent is doing from within the pull request, click **View session** <img width="10%" alt="View session button on the pull request" src="../images/view-session.png" /> to watch the progress if desired.
 
 7. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 
-      <img width="70%" alt="add-review" src="../images/add-review.png" />
+      <img width="70%" alt="Approving the pull request in the review form" src="../images/add-review.png" />
 
-      <img width="50%" alt="submit-review" src="../images/submit-review.png" />
+      <img width="50%" alt="Submit review button in the pull request review form" src="../images/submit-review.png" />
 
    b. **Merge**: Select **Ready for review**, then **Merge pull request** and **Confirm merge**
 
-      <img width="50%" alt="ready-for-review" src="../images/ready-for-review.png" />
-      <img width="50%" alt="merge-pull-request" src="../images/merge-pull-request.png" />
+      <img width="50%" alt="Marking the pull request as ready for review" src="../images/ready-for-review.png" />
+      <img width="50%" alt="Merge pull request button on the pull request" src="../images/merge-pull-request.png" />
 
 <details>
 <summary>Having trouble? 🤷</summary>

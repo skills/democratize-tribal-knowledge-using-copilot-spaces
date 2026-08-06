@@ -26,9 +26,86 @@ jobs:
     if: ${{ !github.event.created }}
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.8.1
 
+  # Grading job: confirms the learner's personas/roles improvement landed in the docs.
+  check_step_work:
+    name: Check step work
+    runs-on: ubuntu-latest
+    needs: [find_exercise]
+    env:
+      ISSUE_REPOSITORY: ${{ github.repository }}
+      ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Get response templates
+        uses: actions/checkout@v5
+        with:
+          repository: skills/exercise-toolkit
+          path: exercise-toolkit
+          ref: v0.8.1
+
+      - name: Find last comment
+        id: find-last-comment
+        uses: peter-evans/find-comment@v3
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          direction: last
+
+      - name: Update comment - checking work
+        uses: GrantBirki/comment@v2.1.1
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-id: ${{ steps.find-last-comment.outputs.comment-id }}
+          file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
+          edit-mode: replace
+
+      # START: Check practical exercise
+
+      - name: Check personas/roles doc exists
+        id: check-personas-file
+        continue-on-error: true
+        uses: skills/exercise-toolkit/actions/file-exists@v0.8.1
+        with:
+          file: docs/octoacme-roles-and-personas.md
+
+      - name: Check personas/roles doc describes responsibilities
+        id: check-responsibilities
+        continue-on-error: true
+        uses: skills/action-keyphrase-checker@v1.1.0
+        with:
+          text-file: docs/octoacme-roles-and-personas.md
+          keyphrase: "responsibilities"
+          case-sensitive: false
+
+      - name: Update comment - step results
+        uses: GrantBirki/comment@v2.1.1
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-id: ${{ steps.find-last-comment.outputs.comment-id }}
+          edit-mode: replace
+          file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
+          vars: |
+            step_number: 3
+            results_table:
+              - description: "Checked personas and roles doc exists"
+                passed: ${{ steps.check-personas-file.outcome == 'success' }}
+              - description: "Checked personas and roles doc describes responsibilities"
+                passed: ${{ steps.check-responsibilities.outcome == 'success' }}
+
+      # END: Check practical exercise
+
+      - name: Fail job if not all checks passed
+        if: contains(steps.*.outcome, 'failure')
+        run: exit 1
+
   post_review_content:
     name: Post review content
-    needs: [find_exercise] # if check_step_work then "needs: [find_exercise, check_step_work]"
+    needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}

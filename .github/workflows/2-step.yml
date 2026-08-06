@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "docs/**"
+      - "docs/README.md"
 
 permissions:
   contents: write
@@ -80,7 +80,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v1.1.0
         with:
           text-file: docs/README.md
-          keyphrase: "roles"
+          keyphrase: "project management"
           case-sensitive: false
 
       - name: Update comment - step results
@@ -96,7 +96,7 @@ jobs:
             results_table:
               - description: "Checked if README.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
-              - description: "Checked for roles in README.md"
+              - description: "Checked README.md summarizes the project management processes"
                 passed: ${{ steps.check-for-keyphrase.outcome == 'success' }}
 
       # Add more checks as needed
