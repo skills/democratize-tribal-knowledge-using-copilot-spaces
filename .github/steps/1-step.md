@@ -151,7 +151,7 @@ You can copy or open the link in a new tab to see the newly created issue
 - Make sure you have access to GitHub Copilot Spaces and that your repository is added as a source
 - The repository should be publicly accessible for Copilot to index it
 - Repository indexing can take seconds to minutes depending on size
-- **Conversation clears when you press Send?** Reload the page and try again, or use the **Retry** button. This is usually a transient Copilot Spaces UI issue
-- If the message keeps disappearing, confirm you have access to Copilot Spaces and, on a free plan, select the **Auto** or a **0x** model before sending
+- **Conversation clears when you press Send?** Reload the page and try again, or use the **Retry** button. This is usually a transient Copilot Spaces UI issue.
+- If the message keeps disappearing, confirm you have access to Copilot Spaces and, on a free plan, select **Auto** or another model that does not consume premium request units before sending.
 
 </details>
