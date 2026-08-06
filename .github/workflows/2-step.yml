@@ -18,6 +18,12 @@ env:
 jobs:
   find_exercise:
     name: Find Exercise Issue
+    # Skip the initial seeding commit created when a learner generates the repo from the
+    # template. That first push to main also carries docs/**, which would otherwise trigger
+    # this workflow before the exercise issue exists (and before Step 0 can disable it),
+    # producing a failing run. A branch-creation push sets github.event.created == true;
+    # later merges to main do not, so grading still runs when the learner progresses.
+    if: ${{ !github.event.created }}
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.8.1
 
   # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
