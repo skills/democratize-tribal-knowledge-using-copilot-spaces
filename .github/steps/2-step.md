@@ -153,5 +153,6 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 - **Issue not attaching?** Make sure you're using the exact format `@{{full_repo_name}}/issues/#` where `#` is your issue number
 - **Copilot Cloud Agent not working?** Ensure you have the necessary permissions to create pull requests in your repository
 - **Pull request creation failed?** The issue must be properly attached before the Copilot Cloud Agent can work on it
+- **Step didn't advance after merging?** The check runs automatically when the pull request is merged into `main`. Give it a moment, then open the [Actions tab](https://github.com/{{full_repo_name}}/actions) to confirm the **Step 2** run completed. No manual approval is required
 
 </details>

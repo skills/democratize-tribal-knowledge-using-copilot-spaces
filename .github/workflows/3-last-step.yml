@@ -1,11 +1,9 @@
 name: Step 3 # Last step of the exercise
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
     paths:
       - "docs/**"
 

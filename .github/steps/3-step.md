@@ -176,5 +176,6 @@ In the same Copilot Space conversation do the following:
 - Consider adding templates, checklists, or clarifying existing processes
 - Common improvements include: role clarification, communication protocols, decision-making frameworks
 - Even small improvements like adding examples or clarifying steps can be valuable
+- **Step didn't complete after merging?** The check runs automatically when the pull request is merged into `main`. Give it a moment, then open the [Actions tab](https://github.com/{{full_repo_name}}/actions) to confirm the **Step 3** run completed. No manual approval is required
 
 </details>

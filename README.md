@@ -63,6 +63,8 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 - If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
 
+- Steps advance automatically when you merge your pull request into `main`; no manual workflow approval is required. If a step seems delayed, check the [Actions](../../actions) tab to confirm the run completed.
+
 </details>
 
 ---
