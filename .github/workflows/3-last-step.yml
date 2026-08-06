@@ -38,6 +38,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Get response templates
         uses: actions/checkout@v5
@@ -52,6 +54,7 @@ jobs:
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-author: "github-actions[bot]"
           direction: last
 
       - name: Update comment - checking work
@@ -65,21 +68,26 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check personas/roles doc exists
-        id: check-personas-file
+      # Grade that the learner actually changed the personas/roles doc in the merged
+      # pull request, rather than only that the file exists (it ships with the starter repo).
+      - name: Check the personas and roles doc was updated in this pull request
+        id: check-personas-updated
         continue-on-error: true
-        uses: skills/exercise-toolkit/actions/file-exists@v0.8.1
-        with:
-          file: docs/octoacme-roles-and-personas.md
-
-      - name: Check personas/roles doc describes responsibilities
-        id: check-responsibilities
-        continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1.1.0
-        with:
-          text-file: docs/octoacme-roles-and-personas.md
-          keyphrase: "responsibilities"
-          case-sensitive: false
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.event.after }}
+          TARGET_FILE: docs/octoacme-roles-and-personas.md
+        run: |
+          echo "Comparing $BEFORE_SHA...$AFTER_SHA"
+          changed="$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA")"
+          echo "Files changed in this push:"
+          echo "$changed"
+          if echo "$changed" | grep -qx "$TARGET_FILE"; then
+            echo "$TARGET_FILE was updated."
+          else
+            echo "::error::$TARGET_FILE was not updated in this pull request."
+            exit 1
+          fi
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -92,10 +100,8 @@ jobs:
           vars: |
             step_number: 3
             results_table:
-              - description: "Checked personas and roles doc exists"
-                passed: ${{ steps.check-personas-file.outcome == 'success' }}
-              - description: "Checked personas and roles doc describes responsibilities"
-                passed: ${{ steps.check-responsibilities.outcome == 'success' }}
+              - description: "Checked the personas and roles doc was updated in your pull request"
+                passed: ${{ steps.check-personas-updated.outcome == 'success' }}
 
       # END: Check practical exercise
 

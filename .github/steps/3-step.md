@@ -121,7 +121,7 @@ In the same Copilot Space conversation do the following:
 
 4. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
-   <img width="100%" alt="Allow prompt granting the Copilot coding agent access to the repository" src="../images/copilot-cloud-agent-allow.png" />
+   <img width="100%" alt="Allow prompt granting the Copilot Cloud Agent access to the repository" src="../images/copilot-cloud-agent-allow.png" />
 
 5. **Monitor progress**: You should receive a notification that the Copilot Cloud Agent is working on your pull request.
 
