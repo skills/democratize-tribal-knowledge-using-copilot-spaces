@@ -1,11 +1,9 @@
 name: Step 2
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
     paths:
       - "docs/**"
 
