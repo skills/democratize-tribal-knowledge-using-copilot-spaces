@@ -20,15 +20,6 @@ To get started, you need access to Copilot Spaces and a GitHub Copilot plan with
 > [!IMPORTANT]
 > If you are using a Copilot free plan or are concerned with impacting usage based billing, use "**Auto**". These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans), [Usage Based Billing for individuals](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals), and [Usage Based Billing for Enterprises and Organizations](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
 
-> [!NOTE]
-> **Optional:** This exercise now advances automatically when you merge your pull
-> request, so you do not need to change any approval settings to progress.
-> If you prefer, you can still review **Settings** --> **Actions** --> **General**
-> (part way down) --> "**Require approval for first-time contributors who are new to GitHub**"
-> shown in the following image, but it is not required for this exercise.
-
-<img width="50%" alt="GitHub repository Settings, Actions, General page showing the approval requirement option" src="../images/settings-actions-general-approvals.png" />
-
 ### ⌨️ Activity: Create your OctoAcme Project Management Hub Copilot Space
 
 1. Navigate to GitHub Copilot Spaces https://github.com/copilot/spaces (ensure you have access to this feature)
