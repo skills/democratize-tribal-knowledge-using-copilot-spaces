@@ -11,6 +11,7 @@ permissions:
   contents: write
   actions: write
   issues: write
+  pull-requests: read
 
 env:
   REVIEW_FILE: ".github/steps/x-review.md"
@@ -68,6 +69,29 @@ jobs:
 
       # START: Check practical exercise
 
+      # Ensure the personas/roles update arrived through a merged pull request rather than a
+      # commit pushed straight to main. Without this guard, any direct commit that touches
+      # docs/** (for example, when the Copilot Cloud Agent commits directly instead of
+      # opening a pull request) would satisfy the file check below and finish the exercise
+      # before the pull request is ever reviewed and merged. Requiring a merged pull request
+      # keeps the intended issue -> pull request -> review -> merge workflow intact.
+      - name: Verify the update arrived via a merged pull request
+        id: check-merged-pr
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{ github.event.after }}
+        run: |
+          echo "Looking for a merged pull request associated with $HEAD_SHA"
+          merged_prs="$(gh api "repos/${{ github.repository }}/commits/${HEAD_SHA}/pulls" --jq '[.[] | select(.merged_at != null)]')"
+          count="$(echo "$merged_prs" | jq 'length')"
+          if [ "$count" -eq 0 ]; then
+            echo "::error::This change was pushed directly to main. Open a pull request for the personas and roles update and merge it, rather than committing directly to main."
+            exit 1
+          fi
+          echo "Found merged pull request(s):"
+          echo "$merged_prs" | jq -r '.[] | "  #\(.number) \(.title)"'
+
       # Grade that the learner actually changed the personas/roles doc in the merged
       # pull request, rather than only that the file exists (it ships with the starter repo).
       - name: Check the personas and roles doc was updated in this pull request
@@ -100,6 +124,8 @@ jobs:
           vars: |
             step_number: 3
             results_table:
+              - description: "Checked the personas and roles update was merged through a pull request"
+                passed: ${{ steps.check-merged-pr.outcome == 'success' }}
               - description: "Checked the personas and roles doc was updated in your pull request"
                 passed: ${{ steps.check-personas-updated.outcome == 'success' }}
 
