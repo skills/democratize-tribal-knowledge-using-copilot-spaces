@@ -18,11 +18,100 @@ env:
 jobs:
   find_exercise:
     name: Find Exercise Issue
+    # Skip the initial seeding commit created when a learner generates the repo from the
+    # template. That first push to main also carries docs/**, which would otherwise trigger
+    # this workflow before the exercise issue exists (and before Step 0 can disable it),
+    # producing a failing run. A branch-creation push sets github.event.created == true;
+    # later merges to main do not, so grading still runs when the learner progresses.
+    if: ${{ !github.event.created }}
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.8.1
+
+  # Grading job: confirms the learner's personas/roles improvement landed in the docs.
+  check_step_work:
+    name: Check step work
+    runs-on: ubuntu-latest
+    needs: [find_exercise]
+    env:
+      ISSUE_REPOSITORY: ${{ github.repository }}
+      ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Get response templates
+        uses: actions/checkout@v5
+        with:
+          repository: skills/exercise-toolkit
+          path: exercise-toolkit
+          ref: v0.8.1
+
+      - name: Find last comment
+        id: find-last-comment
+        uses: peter-evans/find-comment@v3
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-author: "github-actions[bot]"
+          direction: last
+
+      - name: Update comment - checking work
+        uses: GrantBirki/comment@v2.1.1
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-id: ${{ steps.find-last-comment.outputs.comment-id }}
+          file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
+          edit-mode: replace
+
+      # START: Check practical exercise
+
+      # Grade that the learner actually changed the personas/roles doc in the merged
+      # pull request, rather than only that the file exists (it ships with the starter repo).
+      - name: Check the personas and roles doc was updated in this pull request
+        id: check-personas-updated
+        continue-on-error: true
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.event.after }}
+          TARGET_FILE: docs/octoacme-roles-and-personas.md
+        run: |
+          echo "Comparing $BEFORE_SHA...$AFTER_SHA"
+          changed="$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA")"
+          echo "Files changed in this push:"
+          echo "$changed"
+          if echo "$changed" | grep -qx "$TARGET_FILE"; then
+            echo "$TARGET_FILE was updated."
+          else
+            echo "::error::$TARGET_FILE was not updated in this pull request."
+            exit 1
+          fi
+
+      - name: Update comment - step results
+        uses: GrantBirki/comment@v2.1.1
+        with:
+          repository: ${{ env.ISSUE_REPOSITORY }}
+          issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-id: ${{ steps.find-last-comment.outputs.comment-id }}
+          edit-mode: replace
+          file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
+          vars: |
+            step_number: 3
+            results_table:
+              - description: "Checked the personas and roles doc was updated in your pull request"
+                passed: ${{ steps.check-personas-updated.outcome == 'success' }}
+
+      # END: Check practical exercise
+
+      - name: Fail job if not all checks passed
+        if: contains(steps.*.outcome, 'failure')
+        run: exit 1
 
   post_review_content:
     name: Post review content
-    needs: [find_exercise] # if check_step_work then "needs: [find_exercise, check_step_work]"
+    needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}

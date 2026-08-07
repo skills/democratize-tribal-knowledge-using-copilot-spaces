@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "docs/**"
+      - "docs/README.md"
 
 permissions:
   contents: write
@@ -18,6 +18,12 @@ env:
 jobs:
   find_exercise:
     name: Find Exercise Issue
+    # Skip the initial seeding commit created when a learner generates the repo from the
+    # template. That first push to main also carries docs/**, which would otherwise trigger
+    # this workflow before the exercise issue exists (and before Step 0 can disable it),
+    # producing a failing run. A branch-creation push sets github.event.created == true;
+    # later merges to main do not, so grading still runs when the learner progresses.
+    if: ${{ !github.event.created }}
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.8.1
 
   # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
@@ -46,6 +52,7 @@ jobs:
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
+          comment-author: "github-actions[bot]"
           direction: last
 
       - name: Update comment - checking work
@@ -74,7 +81,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v1.1.0
         with:
           text-file: docs/README.md
-          keyphrase: "roles"
+          keyphrase: "project management"
           case-sensitive: false
 
       - name: Update comment - step results
@@ -90,7 +97,7 @@ jobs:
             results_table:
               - description: "Checked if README.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
-              - description: "Checked for roles in README.md"
+              - description: "Checked README.md summarizes the project management processes"
                 passed: ${{ steps.check-for-keyphrase.outcome == 'success' }}
 
       # Add more checks as needed

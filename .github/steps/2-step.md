@@ -34,11 +34,11 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
 
    Open your Copilot Space you created in the previous step. https://github.com/copilot/spaces and select **Yours** and select **"OctoAcme Project Management Hub"**
 
-   <img width="50%" alt="copilot-spaces-yours" src="../images/copilot-spaces-yours.png" />
+   <img width="50%" alt="The Yours tab in Copilot Spaces listing your spaces" src="../images/copilot-spaces-yours.png" />
 
 2. Start a new conversation in the Copilot Space and prompt the following:
 
-   <img width="70%" alt="copilot-spaces-conversation-summary" src="../images/copilot-spaces-conversation-summary.png" />
+   <img width="70%" alt="Prompting the Copilot Space to summarize the project management docs" src="../images/copilot-spaces-conversation-summary.png" />
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -51,7 +51,7 @@ Proceed to the activities and run the provided prompts in your Copilot Space.
    <details>
    <summary> 📷 Show screenshot of the conversation output</summary>
 
-   <img width="50%" alt="copilot-spaces-conversation-summary-output" src="../images/copilot-spaces-conversation-summary-output.png" />
+   <img width="50%" alt="Copilot Space conversation output showing the generated process summary" src="../images/copilot-spaces-conversation-summary-output.png" />
 
    </details>
 
@@ -76,7 +76,7 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
 4. **Create the pull request**: Now send this prompt to create the pull request:
 
-   <img width="80%" alt="repository-issue-pr-creation" src="../images/repository-issue-pr-creation-step2.png" />
+   <img width="80%" alt="Prompt to create a pull request from the attached README issue in Copilot Space" src="../images/repository-issue-pr-creation-step2.png" />
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -92,11 +92,11 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 > [!NOTE]
 > If an issue or pull request is not created, click the **Retry** button shown below
 
-<img width="215" alt="Retry button to regenerate an issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
+<img width="215" alt="Retry button to regenerate the issue or pull request in Copilot Space" src="../images/retry-copilot-space.png" />
 
 5. **Allow the Copilot Cloud Agent**: When prompted, select **Allow** to let the Copilot Cloud Agent work on your repository
 
-   <img width="100%" alt="copilot-cloud-agent-allow" src="../images/copilot-cloud-agent-allow.png" />
+   <img width="100%" alt="Allow prompt granting the Copilot Cloud Agent access to the repository" src="../images/copilot-cloud-agent-allow.png" />
 
 6. **Monitor progress**: You should receive a notification that the Copilot Cloud Agent is working on your pull request.
 
@@ -106,17 +106,17 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
    Go to your repository and click **Pull requests** and select the pull request to see the progress:
 
-      <img width="70%" alt="pull-requests" src="../images/pull-requests.png" />
+      <img width="70%" alt="Pull requests tab in the repository showing the open pull request" src="../images/pull-requests.png" />
 
    #### Option 2: Check Agent Sessions in your Copilot Space on the left side under Agent sessions
 
    You can track the progress of the Copilot Cloud Agent and view details on the left side under **Agent sessions**. Click on the session to see details about the tasks being performed by the agent.
 
-      <img width="40%" alt="agent-session-1" src="../images/agent-sessions-1.png" />
+      <img width="40%" alt="Agent sessions panel in the Copilot Space showing the running session" src="../images/agent-sessions-1.png" />
 
    You can get to the pull request that the agent is working on by clicking the link in the session details at the bottom where it says **View pull request**.
 
-      <img width="40%" alt="view-pull-request" src="../images/view-pull-request.png" />
+      <img width="40%" alt="View pull request link in the Copilot Space session details" src="../images/view-pull-request.png" />
 
 7. **Check open pull requests**: We can check pull request status from our **Copilot Space** as well.
 
@@ -126,25 +126,25 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > check open pull requests
    > ```
 
-   <img width="40%" alt="check-open-prs" src="../images/check-open-prs-2.png" />
+   <img width="40%" alt="Copilot Space response listing the open pull request" src="../images/check-open-prs-2.png" />
 
    Click the link to the pull request in the Copilot Space to view the PR details and monitor the Copilot Cloud Agent's progress.
 
 > [!NOTE]
-> The Copilot Cloud Agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Cloud Agent is doing from within the pull request, click **View session** <img width="10%" alt="view-session" src="../images/view-session.png" /> to watch the progress if desired.
+> The Copilot Cloud Agent typically takes 5-15 minutes to complete the work. If you want to track the work that the Copilot Cloud Agent is doing from within the pull request, click **View session** <img width="10%" alt="View session button on the pull request" src="../images/view-session.png" /> to watch the progress if desired.
 
 8. **Review and merge**: Once the pull request is ready:
 
    a. **Submit review**: Leave a comment (optional), click **Approve**, then **Submit review**
 
-      <img width="70%" alt="add-review" src="../images/add-review.png" />
+      <img width="70%" alt="Approving the pull request in the review form" src="../images/add-review.png" />
 
-      <img width="50%" alt="submit-review" src="../images/submit-review.png" />
+      <img width="50%" alt="Submit review button in the pull request review form" src="../images/submit-review.png" />
 
    b. **Merge**: Select **Ready for review**, then **Merge pull request** and **Confirm merge**
 
-      <img width="50%" alt="ready-for-review" src="../images/ready-for-review.png" />
-      <img width="50%" alt="merge-pull-request" src="../images/merge-pull-request.png" />
+      <img width="50%" alt="Marking the pull request as ready for review" src="../images/ready-for-review.png" />
+      <img width="50%" alt="Merge pull request button on the pull request" src="../images/merge-pull-request.png" />
 
 <details>
 <summary>Having trouble? 🤷</summary>
