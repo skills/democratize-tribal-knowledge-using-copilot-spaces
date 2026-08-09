@@ -61,9 +61,8 @@ jobs:
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
 
-      - name: Reset exercise workflows and enable Step 1
-        run: |
-          gh workflow enable "1-step.yml"
-          gh workflow disable "0-start-exercise.yml"
+      - name: Enable Step 1
+        # The start_exercise job disables every exercise workflow before this job runs.
+        run: gh workflow enable "1-step.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
