@@ -63,8 +63,6 @@ jobs:
 
       - name: Reset exercise workflows and enable Step 1
         run: |
-          gh workflow disable "2-step.yml"
-          gh workflow disable "3-last-step.yml"
           gh workflow enable "1-step.yml"
           gh workflow disable "0-start-exercise.yml"
         env:
