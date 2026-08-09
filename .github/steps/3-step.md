@@ -19,7 +19,7 @@ Effective process evolution follows a lightweight cycle:
 - Measure adoption and revisit as new insights emerge
 
 > [!IMPORTANT]
-> If you use Copilot Free or want to avoid consuming premium request units, select **Auto**. Requests made with Auto do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> If you use Copilot Free or want to avoid consuming premium request units, select **Auto**. Requests made with Auto do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot billing](https://docs.github.com/en/billing/concepts/product-billing/github-copilot-billing).
 
 ### ⌨️ Activity: Attach an issue template and create an issue for process improvements
 
