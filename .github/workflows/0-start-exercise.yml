@@ -66,5 +66,6 @@ jobs:
           gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/2-step.yml/disable"
           gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/3-last-step.yml/disable"
           gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/1-step.yml/enable"
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/0-start-exercise.yml/disable"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
