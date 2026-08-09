@@ -108,11 +108,13 @@ In the same Copilot Space conversation do the following:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
+   > - Verify the attached issue is titled "Adding more personas and roles to the project management processes".
+   > - If a different issue is attached, stop and do not create a pull request.
    > - Create a pull request that implements the attached issue.
    > - Update `docs/octoacme-roles-and-personas.md` with the proposed personas and roles.
    > - Describe each new persona's responsibilities and how they interact with existing roles.
    > - Keep the changes focused on the attached issue and this document.
-   > - Add this pull request to the attached issue.
+   > - In the pull request description, add `Closes #<issue-number>`, replacing `<issue-number>` with the attached issue's number.
    > - Add {{login}} as a reviewer for this pull request
    > ```
 
@@ -170,6 +172,8 @@ In the same Copilot Space conversation do the following:
 
       <img width="50%" alt="Marking the pull request as ready for review" src="../images/ready-for-review.png" />
       <img width="50%" alt="Merge pull request button on the pull request" src="../images/merge-pull-request.png" />
+
+   c. **Confirm issue closure**: Open the issue linked from the pull request and verify that GitHub marked it **Closed** after the pull request merged.
 
 <details>
 <summary>Having trouble? 🤷</summary>

@@ -81,11 +81,13 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
+   > - Verify the attached issue is the README issue created in Step 1. Its title should include README, project management processes summary, and links.
+   > - If a different issue is attached, stop and do not create a pull request.
    > - Create a pull request based on the attached issue.
    > - The README should also contain a brief overview of the project management processes
    >   used by OctoAcme based on the summary we just created.
    > - The README should be in the `docs/` folder
-   > - Add this pull request to the attached issue.
+   > - In the pull request description, add `Closes #<issue-number>`, replacing `<issue-number>` with the attached issue's number.
    > - Add {{login}} as a reviewer for the pull request
    > ```
 
@@ -145,6 +147,8 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
       <img width="50%" alt="Marking the pull request as ready for review" src="../images/ready-for-review.png" />
       <img width="50%" alt="Merge pull request button on the pull request" src="../images/merge-pull-request.png" />
+
+   c. **Confirm issue closure**: Open the issue linked from the pull request and verify that GitHub marked it **Closed** after the pull request merged.
 
 <details>
 <summary>Having trouble? 🤷</summary>
