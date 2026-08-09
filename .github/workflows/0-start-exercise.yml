@@ -63,9 +63,9 @@ jobs:
 
       - name: Reset exercise workflows and enable Step 1
         run: |
-          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/2-step.yml/disable"
-          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/3-last-step.yml/disable"
-          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/1-step.yml/enable"
-          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/0-start-exercise.yml/disable"
+          gh workflow disable "2-step.yml"
+          gh workflow disable "3-last-step.yml"
+          gh workflow enable "1-step.yml"
+          gh workflow disable "0-start-exercise.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
