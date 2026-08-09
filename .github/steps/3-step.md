@@ -58,7 +58,8 @@ Effective process evolution follows a lightweight cycle:
   >    that outlines the need to expand the defined roles and responsibilities in the project management documentation.
   > - Make sure the new roles/personas have descriptions of their responsibilities and how they interact with existing roles.
   > - The issue should detail why this is important, potential personas to add, and how it will improve project outcomes.
-  > - add to the process document `docs/octoacme-roles-and-personas.md`
+  > - Identify `docs/octoacme-roles-and-personas.md` in the issue as the process document to update in future work.
+  > - Only create the issue. Do not modify files, create a branch, commit changes, or create a pull request.
   > ```
 
    <details>
