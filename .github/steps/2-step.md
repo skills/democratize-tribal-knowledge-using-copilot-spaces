@@ -2,7 +2,7 @@
 
 In this step you will:
 
-- Explore the process docs in the docs/ folder (e.g., project-lifecycle.md, roles-responsibilities.md, communication-plan.md)
+- Explore the process docs in the `docs/` folder (for example, `octoacme-project-planning.md`, `octoacme-roles-and-personas.md`, and `octoacme-risks-and-communication.md`)
 - Generate a 3–4 paragraph summary in your Copilot Space (workflows, roles, communication, quality)
 - Use that summary to create/attach the existing issue about the README
 - Create a pull request adding a README that links all process docs and includes the brief overview
@@ -26,7 +26,7 @@ You will use the prompts below to:
 Proceed to the activities and run the provided prompts in your Copilot Space.
 
 > [!IMPORTANT]
-> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> If you use Copilot Free or want to avoid consuming premium request units, select **Auto**. Requests made with Auto do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot billing](https://docs.github.com/en/billing/concepts/product-billing/github-copilot-billing).
 
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 
@@ -81,11 +81,13 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
+   > - Verify the attached issue is the README issue created in Step 1. Its title should include README, project management processes summary, and links.
+   > - If a different issue is attached, stop and do not create a pull request.
    > - Create a pull request based on the attached issue.
    > - The README should also contain a brief overview of the project management processes
    >   used by OctoAcme based on the summary we just created.
    > - The README should be in the `docs/` folder
-   > - Add this pull request to the attached issue.
+   > - In the pull request description, add `Closes #<issue-number>`, replacing `<issue-number>` with the attached issue's number.
    > - Add {{login}} as a reviewer for the pull request
    > ```
 
@@ -145,6 +147,8 @@ In this activity, you will connect the issue you created in Step 1 to your Copil
 
       <img width="50%" alt="Marking the pull request as ready for review" src="../images/ready-for-review.png" />
       <img width="50%" alt="Merge pull request button on the pull request" src="../images/merge-pull-request.png" />
+
+   c. **Confirm issue closure**: Open the issue linked from the pull request and verify that GitHub marked it **Closed** after the pull request merged.
 
 <details>
 <summary>Having trouble? 🤷</summary>

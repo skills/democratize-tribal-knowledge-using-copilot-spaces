@@ -84,6 +84,20 @@ jobs:
           keyphrase: "project management"
           case-sensitive: false
 
+      - name: Check README links all process documents
+        id: check-doc-links
+        continue-on-error: true
+        run: |
+          missing=0
+          for doc in docs/octoacme-*.md; do
+            filename="$(basename "$doc")"
+            if ! grep -Fq "$filename" docs/README.md; then
+              echo "::error::docs/README.md is missing a link to $filename"
+              missing=1
+            fi
+          done
+          exit "$missing"
+
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -99,6 +113,8 @@ jobs:
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
               - description: "Checked README.md summarizes the project management processes"
                 passed: ${{ steps.check-for-keyphrase.outcome == 'success' }}
+              - description: "Checked README.md links all project management process documents"
+                passed: ${{ steps.check-doc-links.outcome == 'success' }}
 
       # Add more checks as needed
 

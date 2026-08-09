@@ -22,8 +22,8 @@ jobs:
     name: Post next step content
     needs: [find_exercise]
     runs-on: ubuntu-latest
-    # Only run if the issue title contains any of the specified keywords "README", "processes", or "links"
-    if: contains(github.event.issue.title, 'README') || contains(github.event.issue.title, 'processes') || contains(github.event.issue.title, 'links')
+    # Only advance for the README issue created in Step 1.
+    if: contains(github.event.issue.title, 'README') && contains(github.event.issue.title, 'project management') && contains(github.event.issue.title, 'links')
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
