@@ -2,7 +2,7 @@
 
 In this step you will:
 
-- Explore the process docs in the docs/ folder (e.g., project-lifecycle.md, roles-responsibilities.md, communication-plan.md)
+- Explore the process docs in the `docs/` folder (for example, `octoacme-project-planning.md`, `octoacme-roles-and-personas.md`, and `octoacme-risks-and-communication.md`)
 - Generate a 3–4 paragraph summary in your Copilot Space (workflows, roles, communication, quality)
 - Use that summary to create/attach the existing issue about the README
 - Create a pull request adding a README that links all process docs and includes the brief overview
@@ -26,7 +26,7 @@ You will use the prompts below to:
 Proceed to the activities and run the provided prompts in your Copilot Space.
 
 > [!IMPORTANT]
-> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> If you use Copilot Free or want to avoid consuming premium request units, select **Auto**. Requests made with Auto do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### ⌨️ Activity: Explore the project management process docs and Summarize in your Copilot Space
 

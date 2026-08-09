@@ -19,11 +19,15 @@ Effective process evolution follows a lightweight cycle:
 - Measure adoption and revisit as new insights emerge
 
 > [!IMPORTANT]
-> If you are using a Copilot free plan or are concerned with impacting premium usage quotas, use a **0x** model or **Auto** if available. These models do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> If you use Copilot Free or want to avoid consuming premium request units, select **Auto**. Requests made with Auto do not consume premium request units. For more information, see [GitHub Copilot plans](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans) and [Copilot Requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### ⌨️ Activity: Attach an issue template and create an issue for process improvements
 
    <img width="50%" alt="The Yours tab in Copilot Spaces listing your spaces" src="../images/copilot-spaces-yours.png" />
+
+1. Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
+
+   <img width="40%" alt="Copilot Space conversation input box" src="../images/copilot-spaces-chat.png" />
 
 1. Add your files from the repository to the conversation by clicking on <img width="5%" alt="Add files plus button in a Copilot Space conversation" src="../images/add-files-plus.png" /> and selecting the option to add **Files**:
 
@@ -38,15 +42,13 @@ Effective process evolution follows a lightweight cycle:
 
    <img width="40%" alt="Selecting a repository as a source in a Copilot Space" src="../images/add-sources-repository.png" />
 
-1. Select the issue template to this new Copilot Space conversation.
+1. Select the issue template to attach it to this new Copilot Space conversation.
 
    `.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`
 
      <img width="30%" alt="Attaching the issue template file to the Copilot Space conversation" src="../images/add-issue-template.png" />
 
-1. Start a new conversation in the Copilot Space and use the following prompt to create an issue that identifies gaps in the project management processes documentation related to personas/roles and outlines needed improvements. Make sure to reference the attached issue template in your prompt.
-
-   <img width="40%" alt="Copilot Space conversation input box" src="../images/copilot-spaces-chat.png" />
+1. After attaching the issue template, enter the prompt:
 
   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
   >
@@ -106,11 +108,10 @@ In the same Copilot Space conversation do the following:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > - Create a pull request that implements process improvements
-   >   based on the analysis we did earlier.
-   > - The improvements should address gaps or inefficiencies identified in the project management documentation.
-   > - The pull request should include updates to existing docs or new templates/checklists as needed.
-   > - All documents should be in the `docs/` folder
+   > - Create a pull request that implements the attached issue.
+   > - Update `docs/octoacme-roles-and-personas.md` with the proposed personas and roles.
+   > - Describe each new persona's responsibilities and how they interact with existing roles.
+   > - Keep the changes focused on the attached issue and this document.
    > - Add this pull request to the attached issue.
    > - Add {{login}} as a reviewer for this pull request
    > ```
